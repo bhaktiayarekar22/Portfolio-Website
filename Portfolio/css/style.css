@@ -1,0 +1,419 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1f2235;
+  font-family: "Baloo Tamma 2", cursive;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* For Main Heading */
+.m-heading {
+  font-family: "Roboto Slab", serif;
+}
+
+.navigation-link {
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.navigation-link:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #f5ba09;
+  transition: 0.5s ease;
+  color: #f5ba09 !important;
+}
+
+.main-container {
+  min-height: 100vh;
+  margin-top: 6rem; /* Added margin for fixed navbar */
+}
+
+.main_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_row h1 {
+  font-size: 5rem;
+}
+
+.main_row img {
+  width: auto;
+  height: 41.9rem;
+}
+
+#about {
+  background: #313552;
+  border-radius: 0.5rem;
+}
+
+.card {
+  border-bottom: 8px solid #f5ba09;
+}
+
+#social-media {
+  background: #313552;
+}
+
+.media-link {
+  padding: 1rem;
+  max-width: 15rem;
+  margin-left: 1rem;
+  border: 2px solid #f5ba09;
+  border-radius: 0.5rem;
+}
+
+#resume {
+  background: #313552;
+}
+
+.custom-nav {
+  background-color: #313552 !important;
+}
+
+/* Navbar specific styles */
+.navbar-custom {
+  background-color: #313552 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu-custom {
+  background-color: #313552;
+  border: 1px solid #f5ba09;
+}
+
+.dropdown-item-custom {
+  color: white;
+  transition: 0.3s ease;
+}
+
+.dropdown-item-custom:hover {
+  background-color: #f5ba09;
+  color: #313552;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.5rem;
+}
+
+#contact {
+  background: #313552;
+  border-radius: 0.5rem;
+}
+
+.contact-form {
+  background: #2a2d42;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.form-control {
+  background: #1f2235;
+  border: 2px solid #444;
+  color: white;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.form-control:focus {
+  background: #1f2235;
+  border-color: #f5ba09;
+  color: white;
+  box-shadow: 0 0 0 0.2rem rgba(245, 186, 9, 0.25);
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.form-label {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info-card {
+  background: #2a2d42;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #f5ba09;
+  transition: 0.3s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 186, 9, 0.2);
+}
+
+.contact-icon {
+  color: #f5ba09;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.btn-send {
+  background: linear-gradient(45deg, #f5ba09, #ffc107);
+  border: none;
+  color: #1f2235;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.btn-send:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 186, 9, 0.4);
+  color: #1f2235;
+}
+
+.btn-send:focus {
+  box-shadow: 0 0 0 0.2rem rgba(245, 186, 9, 0.5);
+}
+
+/* ===== HERO SECTION STYLES ===== */
+
+/* Hero Section Container */
+.origami-card-v1 {
+  background: rgba(245, 186, 9, 0.05);
+  backdrop-filter: blur(10px);
+  border-left: 8px solid #f5ba09;
+  padding: 4rem;
+  min-height: 100vh;
+  width: 100vw;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.origami-card-v1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(180deg, #f5ba09, #e6a800, #f5ba09);
+  box-shadow: 0 0 20px rgba(245, 186, 9, 0.5);
+}
+
+.origami-card-v1::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 200px;
+  height: 200px;
+  background: rgba(245, 186, 9, 0.1);
+  border-radius: 50%;
+  animation: hero-float 6s ease-in-out infinite;
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: hero-fadeInUp 0.8s ease-out;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: hero-fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.hero-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  animation: hero-fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  animation: hero-fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.hero-buttons {
+  animation: hero-fadeInUp 0.8s ease-out 0.8s both;
+}
+
+/* Hero Section Specific Button Styles */
+.hero-btn {
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: 2px solid;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.hero-btn-outline-warning {
+  color: #f5ba09;
+  border-color: #f5ba09;
+  background: transparent;
+}
+
+.hero-btn-outline-warning:hover {
+  background: #f5ba09;
+  color: #313552;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(245, 186, 9, 0.3);
+  text-decoration: none;
+}
+
+.hero-btn-light {
+  background: #f8f9fa;
+  color: #313552;
+  border-color: #f8f9fa;
+}
+
+.hero-btn-light:hover {
+  background: transparent;
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(248, 249, 250, 0.2);
+  text-decoration: none;
+}
+
+/* Hero Section Utility Classes */
+.text-golden {
+  color: #f5ba09 !important;
+}
+
+.text-dark-blue {
+  color: #313552 !important;
+}
+
+/* Hero Section Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f5ba09;
+  text-align: center;
+  animation: hero-bounce 2s infinite;
+  z-index: 3;
+}
+
+/* Hero Section Animations */
+@keyframes hero-fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-20px); 
+  }
+}
+
+@keyframes hero-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+/* Hero Section Responsive Design */
+@media (max-width: 768px) {
+  .origami-card-v1 {
+    padding: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-content h3 {
+    font-size: 1.3rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  .hero-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    display: block;
+    margin: 0.5rem auto;
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .origami-card-v1::after {
+    width: 120px;
+    height: 120px;
+    top: 15%;
+    right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .origami-card-v1 {
+    padding: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+  
+  .hero-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .scroll-indicator {
+    bottom: 20px;
+    font-size: 0.9rem;
+  }
+}

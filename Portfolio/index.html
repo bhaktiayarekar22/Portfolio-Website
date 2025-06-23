@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav  pt-4 ">
+      <div class="container">
+        <div class="row w-100">
+          <div class="col-6 d-flex justify-content-start align-items-center">
+            <i class="fas fa-code fa-2x text-warning mr-2"></i>
+            <h4 class="text-white mb-0"> Portfolio</h4>
+          </div>
+          <div class="col-6 justify-content-start align-items-center">
+            <div class="row">
+              <div class="col-2">
+                <a href="#about" class="text-white navigation-link">About</a>
+              </div>
+              <div class="col-2">
+                <a href="#projects" class="text-white navigation-link">Project</a>
+              </div>
+              <div class="col-2">
+                <a href="#social-media" class="text-white navigation-link">Social Media</a>
+              </div>
+              <div class="col-2">
+                <a href="#resume" class="text-white navigation-link">Resume</a>
+              </div>
+              <div class="col-2">
+                <a href="#contact" class="text-white navigation-link">Contact Us</a>
+              </div>
+              
+              <div class="col-2">
+                <div class="dropdown">
+                  <a href="#" class="text-white navigation-link dropdown-toggle" id="projectsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="projectsDropdown">
+                    <a class="dropdown-item dropdown-item-custom" href="#paper">Research Paper</a>
+                    <a class="dropdown-item dropdown-item-custom" href="#gallery">Gallery</a>
+                    <a class="dropdown-item dropdown-item-custom" href="#platforms">Platforms</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+
+     <!-- Hero Section with Card -->
+    <div class="origami-card-v1">
+      <div class="hero-content">
+        <h2 class="text-golden">Hello, I'm</h2>
+        <h1 class="text-golden fw-bold">BHAKTI AYAREKAR</h1>
+        <h3 class="text-golden opacity-75">
+          <i>DATA SCIENCE & AI/ML DEVELOPER</i>
+        </h3>
+        <p class="text-golden opacity-75">
+          Loving the Journey of Learning and Growing...
+        </p>
+        <div class="hero-buttons">
+          <a href="#about" class="hero-btn hero-btn-outline-warning">Explore My Work</a>
+          <a href="#contact" class="hero-btn hero-btn-light">Get In Touch</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div>Scroll Down</div>
+        <div style="font-size: 1.5rem; margin-top: 8px;">↓</div>
+      </div>
+    </div>
+
+    <!-- <div class="container main-container">
+      <div class="row main_row">
+        <div class="col-6">
+          <h2 class="text-white">Hello, I'm</h2>
+          <h1 class="text-warning m-heading">Bhakti Ayarekar</h1>
+          <br>
+          <h3 class="text-white"><i>Loving the Journey of Learning and Growing...</i></h3>
+        </div>
+        <div class="col-6">
+          <img src="/images/girl.png" alt="" />
+        </div>
+      </div>
+    </div> -->
+
+    <!-- About Section -->
+     <br>
+     <br>
+     <br>
+    <div id="about" class="container p-5">
+      <div class="row">
+        <div class="col-6">
+            <img src="/images/about_img (2).png" class="img-fluid">
+        </div>
+        <div class="col-6 pl-5 pt-5 pb-5 text-white">
+          <h1 class="text-warning pb-4"><b>About Me</b></h2>
+          <h2 class="m-heading">A little bit about me.</h1>
+          <p>Hi, I'm <b class="text-warning">Bhakti Ayarekar</b>, a Computer Science Engineering graduate specializing in <b class="text-warning">Data Science</b> at KIT College of Engineering, Kolhapur.
+            I'm passionate about using technology and data to solve real-world problems and create meaningful impact.
+            I've been actively learning and working with tools and concepts in machine learning, deep learning, and other data science fields.
+            As the Vice-President of <b class="text-warning">ECell KITCOEK</b>, I led initiatives that promote innovation and entrepreneurship.
+            I've also gained valuable experience through internships at <b class="text-warning">TetraNoodle, Intel, and Menon</b>.</p>
+          <p>Curious, committed, and creative—I love learning new things, building solutions, and working with great teams.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mega Projects Section -->
+    <div id="projects" class="container mt-3 pt-5">
+      <h1 class="text-warning mb-3 pb-2">Mega Projects(Group Project)</h1>
+      <div class="row">
+
+      <div class="col-4 mb-5">
+        <div class="card" style="width: 22rem; height: 35rem;">
+          <img src="/images/pro1.jpg" class="card-img-top p-2" alt="..." style="height: 13rem;">
+          <div class="card-body">
+            <h5 class="card-title">Reddit Sentiment Analysis Using AWS Services (2024)</h5>
+            <p class="card-text"><b>Real-time sentiment analysis system achieving 70% accuracy</b><br>
+              Built an end-to-end pipeline using AWS services for real-time data streaming and NLP processing. Delivers actionable insights for social media monitoring.<br>
+              <b>Tech Stack: AWS (Kinesis, Lambda, Comprehend), Python, PRAW API, PowerBI</b></p>
+            <a href="https://github.com/BhaktiAyarekar/Project_1_Reddit-Sentiment-Analysis" class="btn btn-warning">See Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 mb-5">
+        <div class="card" style="width: 22rem; height: 35rem;">
+          <img src="/images/pro2.jpg" class="card-img-top p-2" alt="..." style="height: 13rem;">
+          <div class="card-body">
+            <h5 class="card-title">Walmart Time Series Analysis (2023)</h5>
+            <p class="card-text"><b>Sales forecasting with 96.48% accuracy</b><br>
+              Comprehensive analysis using ARIMA, SARIMA, and Facebook Prophet models. Achieved exceptional accuracy rates enabling data-driven sales planning decisions.<br>
+              <b>Tech Stack: Python, Pandas, Matplotlib, ARIMA, SARIMA, FB-Prophet</b></p>
+            <a href="https://github.com/BhaktiAyarekar/Project_2_Walmart-Time-Series-Analysis" class="btn btn-warning">See Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 mb-5">
+        <div class="card" style="width: 22rem; height: 35rem;">
+          <img src="/images/pro3.jpg" class="card-img-top p-2" alt="..." style="height: 13rem;">
+          <div class="card-body">
+            <h5 class="card-title">Automatic Number Plate Recognition System (2022)</h5>
+            <p class="card-text"><b>High-precision vehicle identification with 98% detection accuracy</b><br>
+              Intelligent ANPR system combining YOLOv8 and ResNet-50 with OCR integration. Features real-time processing and scalable backend deployment.<br>
+              <b>Tech Stack: YOLOv8, ResNet-50, EasyOCR, TesseractOCR, Node.js, SQL</b></p>
+            <a href="https://github.com/BhaktiAyarekar/Project_3_Automatic-Number-Plate-Recognition" class="btn btn-warning">See Project</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Individual Projects Section -->
+     <div id="projects" class="container mt-3 pt-5">
+      <h1 class="text-warning mb-3 pb-2">My Projects (Individual Projects)</h1>
+      <div class="row">
+
+      <div class="col-4 mb-5">
+        <div class="card" style="width: 22rem; height: 37rem;">
+          <img src="/images/pro4.png" class="card-img-top p-2" alt="..." style="height: 13rem;">
+          <div class="card-body">
+            <h5 class="card-title">Snowflake Weather Data Pipeline (2024)</h5>
+            <p class="card-text"><b>Real-time data pipeline with automated ingestion</b><br>
+              Built an end-to-end serverless pipeline fetching weather data for 10 Indian cities, processing through DynamoDB streams, and auto-ingesting into Snowflake using Snowpipe for real-time analytics.<br>
+              <b>Tech Stack: AWS Lambda, DynamoDB, S3, Snowflake, Snowpipe, EventBridge</b></p>
+            <a href="https://github.com/bhaktiayarekar22/Snowflake_Weather_Data_Pipeline_Project" class="btn btn-warning">See Project</a>
+          </div>
+        </div>
+      </div>
+      
+
+    <div class="col-4 mb-5">
+      <div class="card" style="width: 22rem; height: 37rem;">
+        <img src="/images/pro5.jpg" class="card-img-top p-2" alt="..." style="height: 13rem;">
+        <div class="card-body">
+          <h5 class="card-title">Analytics Vidhya Course Search Engine (2024)</h5>
+          <p class="card-text"><b>Semantic search engine with intelligent course recommendations</b><br>
+            Built an AI-powered search system using Sentence Transformers for semantic similarity matching. Features interactive Streamlit interface with similarity scoring and customizable results display.<br>
+            <b>Tech Stack: Python, Streamlit, Sentence Transformers, Pandas, NumPy</b></p>
+          <a href="https://github.com/bhaktiayarekar22/Smart-Search" class="btn btn-warning">See Project</a>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-4 mb-5">
+        <div class="card" style="width: 22rem; height: 37rem;">
+          <img src="/images/pro3.jpg" class="card-img-top p-2" alt="..." style="height: 13rem;">
+          <div class="card-body">
+            <h5 class="card-title">Automatic Number Plate Recognition System (2022)</h5>
+            <p class="card-text"><b>High-precision vehicle identification with 98% detection accuracy</b><br>
+              Intelligent ANPR system combining YOLOv8 and ResNet-50 with OCR integration. Features real-time processing and scalable backend deployment.<br>
+              <b>Tech Stack: YOLOv8, ResNet-50, EasyOCR, TesseractOCR, Node.js, SQL</b></p>
+            <a href="https://github.com/BhaktiAyarekar/Project_3_Automatic-Number-Plate-Recognition" class="btn btn-warning">See Project</a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div id="social-media" class="container p-4 mt-5 pt-5 pb-5">
+      <div class="container text-white">
+        <h2 class="text-warning"><b>Social Media</b></h2>
+        <h1 class="m-heading">Let's connect</h1>
+        <div class="row pt-5">
+          
+          <div class="col-4 mb-3">
+            <a href="https://www.linkedin.com/in/bhakti-ayarekar-475936249/" target="_blank" class="media-link btn text-decoration-none w-100 p-3">
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start">
+                  <h3 class="pt-2 m-0 text-white">LinkedIn</h3>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                  <i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-4 mb-3">
+            <a href="https://github.com/bhaktiayarekar22/" target="_blank" class="media-link btn text-decoration-none w-100 p-3">
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start">
+                  <h3 class="pt-2 m-0 text-white">Github</h3>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                  <i class="fab fa-github fa-2x" style="color: #ada5a5;"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-4 mb-3">
+            <a href="mailto:bhaktiayarekar@gmail.com" class="media-link btn text-decoration-none w-100 p-3">
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start">
+                  <h3 class="pt-2 m-0 text-white">Email</h3>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                  <i class="fas fa-envelope fa-2x" style="color: #d44638;"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Section -->
+    <div id="resume" class="container mt-5 pt-5 pb-5">
+        <div class="row">
+          <div class="col-2">
+            <div class="text-center">
+              <i class="fas fa-file-pdf fa-10x text-warning"></i>
+            </div>
+          </div>
+          <div class="col-10 pl-5 pt-5 pb-5 text-white">
+            <h1 class="text-warning pb-4"><b>My Resume</b></h1>
+            <h2 class="m-heading">Download my latest resume</h2>
+            <p>Get to know more about my professional journey, skills, and experience. My resume contains detailed information about:</p>
+            <ul class="text-white">
+              <li>Educational Background</li>
+              <li>Technical Skills & Expertise</li>
+              <li>Work Experience & Internships</li>
+              <li>Projects & Achievements</li>
+              <li>Leadership Experience</li>
+            </ul>
+            <div class="mt-4">
+              <a href="/files/Bhakti_Prakash_Ayarekar.pdf" download="Bhakti_Ayarekar_Resume.pdf" class="btn btn-warning btn-lg mr-3">
+                <i class="fas fa-download mr-2"></i>Download Resume
+              </a>
+              <a href="/files/Bhakti_Prakash_Ayarekar.pdf" target="_blank" class="btn btn-outline-warning btn-lg">
+                <i class="fas fa-eye mr-2"></i>View Online
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+     <div id="contact" class="container mt-5 pt-5 pb-5">
+          <!-- Contact Form -->
+        <div class="col">
+          <div class="contact-form">
+            <h2 class="text-warning"><b>Contact Info</b></h2>
+            <form action="mailto:bhaktiayarekar@gmail.com" method="post" enctype="text/plain" id="contactForm">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName" class="form-label">First Name *</label>
+                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="John" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName" class="form-label">Last Name *</label>
+                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Doe" required>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="john.doe@example.com" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="subject" class="form-label">Subject *</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Project Collaboration" required>
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="message" class="form-label">Message *</label>
+                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Hi Bhakti, I'd like to discuss..." required></textarea>
+              </div>
+              
+              <div class="text-center">
+                <button type="submit" class="btn btn-send">
+                  <i class="fas fa-paper-plane mr-2"></i>Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Paper Section -->
+
+      <div id="paper" class="container p-5 mt-5" style="display: none;">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h1 class="text-warning pb-4"><b>Research Papers</b></h1>
+            <h2 class="text-white m-heading">My Published Work & Research Contributions</h2>
+            <p class="text-white">Exploring cutting-edge research in AI-Data Science and Machine Learning</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Paper 1: Reddit Sentiment Analysis -->
+          <div class="col-12 mb-4">
+            <div class="card bg-dark text-white border-warning">
+              <div class="card-body">
+                <h3 class="card-title text-warning">Reddit Sentiment Analysis Using AWS Services</h3>
+                <p class="card-text"><strong>Publisher:</strong> Springer &nbsp; | &nbsp; <strong>Date:</strong> March 11, 2025</p>
+                <p class="card-text">
+                  Our study explores sentiment analysis of Reddit comments using AWS cloud services. 
+                  We built a data pipeline with PRAW, Kinesis Firehose, AWS Glue, and Athena to analyze sentiment patterns. 
+                  AWS Comprehend achieved an F1 score of 0.83 and 82.5% accuracy, showcasing its effectiveness.
+                </p>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-83790-6_28" target="_blank" class="btn btn-warning">Show Publication</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paper 2: ANPR with YOLOv8 and ResNet-50 -->
+          <div class="col-12 mb-4">
+            <div class="card bg-dark text-white border-warning">
+              <div class="card-body">
+                <h3 class="card-title text-warning">Automatic Number Plate Recognition: A Deep Dive into YOLOv8 and ResNet-50 Integration</h3>
+                <p class="card-text"><strong>Publisher:</strong> IEEE &nbsp; | &nbsp; <strong>Date:</strong> April 18, 2024</p>
+                <p class="card-text">
+                  Our research tackles the complexities of identifying car number plates in India, where standards are often not followed. 
+                  Our proposed model employs YOLOv8 for object detection and ResNet-50 for feature extraction, ensuring robust performance under varied conditions. 
+                  Achieving a 98.6% success rate in localizing single-line number plates and a 97.81% success rate in character recognition, this study enhances the accuracy and reliability of ANPR systems.
+                </p>
+                <a href="https://ieeexplore.ieee.org/abstract/document/10498318" target="_blank" class="btn btn-warning">Show Publication</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- Gallery Section -->
+<div id="gallery" class="container p-5 mt-5" style="display: none;">
+  <div class="row">
+    <div class="col-12 text-center mb-5">
+      <h1 class="text-warning pb-4"><b>Gallery</b></h1>
+      <h2 class="text-white m-heading">Visual Journey</h2>
+      <p class="text-white">A collection of moments, achievements, and experiences</p>
+    </div>
+  </div>
+  
+  <!-- Internship Certificates Section -->
+  <div class="row">
+    <div class="col-12 text-center mb-4">
+      <h3 class="text-warning">Internship Certificates</h3>
+      <p class="text-white">Professional experiences and achievements</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <!-- TetraNoodle Technologies Certificate -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card bg-dark text-white border-warning h-100">
+        <div class="card-header bg-warning text-dark">
+          <h5 class="mb-0"><b>TetraNoodle Technologies</b></h5>
+          <small>SDE Internship | Oct 2024 - Jan 2025</small>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <!-- Certificate Image Placeholder -->
+          <div class="text-center mb-3">
+            <div class="border border-warning p-3 mb-3" style="height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #1a1a1a, #2d2d2d);">
+              <img src="images/inter1.png" 
+                 class="img-fluid border border-warning" 
+                 alt="TetraNoodle Technologies Certificate" 
+                 style="height: 200px; width: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <p class="card-text flex-grow-1">
+            Successfully completed SDE Internship focused on AI and automation solutions for email marketing and social network engagement analysis. 
+            Special mentorship from <strong>Manuj Aggarwal</strong> and <strong>Ashwin Kartic</strong>.
+          </p>
+          <div class="mt-auto">
+            <span class="badge bg-warning text-dark me-2">AI</span>
+            <span class="badge bg-warning text-dark me-2">Automation</span>
+            <span class="badge bg-warning text-dark">Remote</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Intel Corporation Certificate -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card bg-dark text-white border-warning h-100">
+        <div class="card-header bg-warning text-dark">
+          <h5 class="mb-0"><b>Intel Corporation</b></h5>
+          <small>Unnati Industrial Training | May - July 2024</small>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <!-- Certificate Image Placeholder -->
+          <div class="text-center mb-3">
+            <div class="border border-warning p-3 mb-3" style="height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #1a1a1a, #2d2d2d);">
+              <img src="images/inter2.jpeg" 
+                 class="img-fluid border border-warning" 
+                 alt="Intel Corporation Certificate" 
+                 style="height: 200px; width: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <p class="card-text flex-grow-1">
+            Developed vehicle movement analysis system using YOLOv8 and Edge AI. Implemented OCR solutions with TesseractOCR, EasyOCR, and custom ResNet-50 model. 
+            Team project with real-time data capture and frontend interface.
+          </p>
+          <div class="mt-auto">
+            <span class="badge bg-warning text-dark me-2">Edge AI</span>
+            <span class="badge bg-warning text-dark me-2">YOLOv8</span>
+            <span class="badge bg-warning text-dark">Computer Vision</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Menon & Menon Pvt Ltd Certificate -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card bg-dark text-white border-warning h-100">
+        <div class="card-header bg-warning text-dark">
+          <h5 class="mb-0"><b>Menon & Menon Pvt Ltd</b></h5>
+          <small>Research Internship | July 2023</small>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <!-- Certificate Image Placeholder -->
+          <div class="text-center mb-3">
+            <div class="border border-warning p-3 mb-3" style="height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(45deg, #1a1a1a, #2d2d2d);">
+              <img src="images/inter3.jpg" 
+                 class="img-fluid border border-warning" 
+                 alt="Menon & Menon Certificate" 
+                 style="height: 200px; width: 100%; object-fit: cover;">
+            </div>
+          </div>
+          <p class="card-text flex-grow-1">
+            Conducted comprehensive market research on organic farming practices. Supported R&D through export-import data collection and predictive analysis on large datasets. 
+            Focused on improving food safety metrics and time series forecasting.
+          </p>
+          <div class="mt-auto">
+            <span class="badge bg-warning text-dark me-2">Research</span>
+            <span class="badge bg-warning text-dark me-2">Data Analysis</span>
+            <span class="badge bg-warning text-dark">Market Research</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+<!-- Platforms Section -->
+    <div id="platforms" class="container p-5 mt-5" style="display: none;">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h1 class="text-warning pb-4"><b>Platforms</b></h1>
+          <h2 class="text-white m-heading">Technologies & Tools</h2>
+          <p class="text-white">I actively engage with coding and data science platforms to practice, compete, and grow my technical skills.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- LeetCode -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white border-warning h-100">
+            <div class="card-body">
+              <h4 class="card-title text-warning">LeetCode</h4>
+              <p class="card-text">
+                I frequently solve algorithmic challenges on LeetCode to sharpen my problem-solving and data structures skills. This platform helps me stay consistent with coding patterns essential for technical interviews and real-world applications.
+              </p>
+              <a href="https://leetcode.com/u/ngJAtPefsr/" target="_blank" class="btn btn-warning">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- HackerRank -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white border-warning h-100">
+            <div class="card-body">
+              <h4 class="card-title text-warning">HackerRank</h4>
+              <p class="card-text">
+                On HackerRank, I explore domains like Python, SQL, and problem-solving through structured skill certifications and challenges. It’s my go-to platform for learning and demonstrating practical coding abilities in various tech stacks.
+              </p>
+              <a href="https://www.hackerrank.com/profile/bhaktiayarekar" target="_blank" class="btn btn-warning">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kaggle -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white border-warning h-100">
+            <div class="card-body">
+              <h4 class="card-title text-warning">Kaggle</h4>
+              <p class="card-text">
+                Kaggle is where I work on real-world data science problems and learn from the global community. I participate in competitions, share notebooks, and apply machine learning techniques using Python, Pandas, and scikit-learn.
+              </p>
+              <a href="https://www.kaggle.com/bhaktiayarekar" target="_blank" class="btn btn-warning">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-muted text-center pt-3 mt-5">
+        <h5>Copyright &copy; 2025 | <a href="#" class="text-white">Bhakti Ayarekar</a></h5>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <script>
+        // Handle form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            const emailBody = `Name: ${firstName} ${lastName}%0D%0AEmail: ${email}%0D%0ASubject: ${subject}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+            
+            window.location.href = `mailto:bhaktiayarekar@gmail.com?subject=${encodeURIComponent(subject)}&body=${emailBody}`;
+        });
+    </script>
+
+    <script>
+    // JavaScript to show sections when dropdown items are clicked
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all dropdown items
+      const dropdownItems = document.querySelectorAll('.dropdown-item-custom');
+      
+      // Add click event listeners
+      dropdownItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Hide all sections first
+          document.getElementById('paper').style.display = 'none';
+          document.getElementById('gallery').style.display = 'none';
+          document.getElementById('platforms').style.display = 'none';
+          
+          // Get the target section from href
+          const targetId = this.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+          
+          // Show the selected section
+          if (targetSection) {
+            targetSection.style.display = 'block';
+            // Smooth scroll to the section
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    });
+    </script>
+
+
+</body>
+</html>
