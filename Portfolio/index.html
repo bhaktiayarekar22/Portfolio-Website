@@ -24,48 +24,51 @@
 <body>
 
     <!-- Fixed Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark custom-nav  pt-4 ">
-      <div class="container">
-        <div class="row w-100">
-          <div class="col-6 d-flex justify-content-start align-items-center">
-            <i class="fas fa-code fa-2x text-warning mr-2"></i>
-            <h4 class="text-white mb-0"> Portfolio</h4>
-          </div>
-          <div class="col-6 justify-content-start align-items-center">
-            <div class="row">
-              <div class="col-2">
-                <a href="#about" class="text-white navigation-link">About</a>
-              </div>
-              <div class="col-2">
-                <a href="#projects" class="text-white navigation-link">Project</a>
-              </div>
-              <div class="col-2">
-                <a href="#social-media" class="text-white navigation-link">Social Media</a>
-              </div>
-              <div class="col-2">
-                <a href="#resume" class="text-white navigation-link">Resume</a>
-              </div>
-              <div class="col-2">
-                <a href="#contact" class="text-white navigation-link">Contact Us</a>
-              </div>
-              
-              <div class="col-2">
-                <div class="dropdown">
-                  <a href="#" class="text-white navigation-link dropdown-toggle" id="projectsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="projectsDropdown">
-                    <a class="dropdown-item dropdown-item-custom" href="#paper">Research Paper</a>
-                    <a class="dropdown-item dropdown-item-custom" href="#gallery">Gallery</a>
-                    <a class="dropdown-item dropdown-item-custom" href="#platforms">Platforms</a>
-                  </div>
-                </div>
-              </div>
-
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav py-3">
+    <div class="container">
+        <!-- Brand/Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="fas fa-code fa-2x text-warning mr-2"></i>
+        <h4 class="text-white mb-0 d-none d-sm-block">Portfolio</h4>
+        </a>
+        
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a href="#about" class="nav-link navigation-link">About</a>
+            </li>
+            <li class="nav-item">
+            <a href="#projects" class="nav-link navigation-link">Projects</a>
+            </li>
+            <li class="nav-item">
+            <a href="#social-media" class="nav-link navigation-link">Social Media</a>
+            </li>
+            <li class="nav-item">
+            <a href="#resume" class="nav-link navigation-link">Resume</a>
+            </li>
+            <li class="nav-item">
+            <a href="#contact" class="nav-link navigation-link">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link navigation-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                More
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-custom">
+                <a class="dropdown-item dropdown-item-custom" href="#paper">Research Paper</a>
+                <a class="dropdown-item dropdown-item-custom" href="#gallery">Gallery</a>
+                <a class="dropdown-item dropdown-item-custom" href="#platforms">Platforms</a>
             </div>
-          </div>
+            </li>
+        </ul>
         </div>
-      </div>
+    </div>
     </nav>
 
     <!-- Main Hero Section -->
@@ -110,198 +113,233 @@
      <br>
      <br>
      <br>
-    <div id="about" class="container p-5">
-      <div class="row">
-        <div class="col-6">
-            <img src="/images/about_img (2).png" class="img-fluid">
+    <div id="about" class="container py-5 my-md-5">
+    <div class="row align-items-center">
+        <!-- Image Column (First) -->
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <div class="text-center">
+            <img src="/images/about_img (2).png" class="img-fluid about-image" alt="Bhakti Ayarekar">
         </div>
-        <div class="col-6 pl-5 pt-5 pb-5 text-white">
-          <h1 class="text-warning pb-4"><b>About Me</b></h2>
-          <h2 class="m-heading">A little bit about me.</h1>
-          <p>Hi, I'm <b class="text-warning">Bhakti Ayarekar</b>, a Computer Science Engineering graduate specializing in <b class="text-warning">Data Science</b> at KIT College of Engineering, Kolhapur.
-            I'm passionate about using technology and data to solve real-world problems and create meaningful impact.
-            I've been actively learning and working with tools and concepts in machine learning, deep learning, and other data science fields.
-            As the Vice-President of <b class="text-warning">ECell KITCOEK</b>, I led initiatives that promote innovation and entrepreneurship.
-            I've also gained valuable experience through internships at <b class="text-warning">TetraNoodle, Intel, and Menon</b>.</p>
-          <p>Curious, committed, and creative—I love learning new things, building solutions, and working with great teams.</p>
         </div>
-      </div>
+        
+        <!-- Text Column (Second) -->
+        <div class="col-12 col-md-6 text-white pl-md-5">
+        <div class="about-content">
+            <h1 class="text-warning pb-3"><b>About Me</b></h1>
+            <h2 class="m-heading pb-3">A little bit about me.</h2>
+            <div class="about-text">
+            <p>Hi, I'm <b class="text-warning">Bhakti Ayarekar</b>, a Computer Science Engineering graduate specializing in <b class="text-warning">Data Science</b> at KIT College of Engineering, Kolhapur.</p>
+            <p>I'm passionate about using technology and data to solve real-world problems and create meaningful impact. I've been actively learning and working with tools and concepts in machine learning, deep learning, and other data science fields.</p>
+            <p>As the Vice-President of <b class="text-warning">ECell KITCOEK</b>, I led initiatives that promote innovation and entrepreneurship. I've also gained valuable experience through internships at <b class="text-warning">TetraNoodle, Intel, and Menon</b>.</p>
+            <p>Curious, committed, and creative—I love learning new things, building solutions, and working with great teams.</p>
+            </div>
+        </div>
+        </div>
+    </div>
     </div>
 
+
+    <!-- Mega Projects Section -->
     <!-- Mega Projects Section -->
     <div id="projects" class="container mt-3 pt-5">
-      <h1 class="text-warning mb-3 pb-2">Mega Projects(Group Project)</h1>
-      <div class="row">
-
-      <div class="col-4 mb-5">
-        <div class="card" style="width: 22rem; height: 35rem;">
-          <img src="/images/pro1.jpg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-          <div class="card-body">
+    <h1 class="text-warning mb-3 pb-2 text-center text-md-left">Mega Projects (Group Project)</h1>
+    <div class="row justify-content-center">
+        <!-- Project 1 -->
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <img src="/images/pro1.jpg" class="card-img-top img-fluid p-2" alt="Reddit Sentiment Analysis" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
             <h5 class="card-title">Reddit Sentiment Analysis Using AWS Services (2024)</h5>
-            <p class="card-text"><b>Real-time sentiment analysis system achieving 70% accuracy</b><br>
-              Built an end-to-end pipeline using AWS services for real-time data streaming and NLP processing. Delivers actionable insights for social media monitoring.<br>
-              <b>Tech Stack: AWS (Kinesis, Lambda, Comprehend), Python, PRAW API, PowerBI</b></p>
-            <a href="https://github.com/BhaktiAyarekar/Project_1_Reddit-Sentiment-Analysis" class="btn btn-warning">See Project</a>
-          </div>
+            <div class="card-text flex-grow-1">
+                <p><strong>Real-time sentiment analysis system achieving 70% accuracy</strong></p>
+                <p>Built an end-to-end pipeline using AWS services for real-time data streaming and NLP processing.</p>
+                <p><strong>Tech Stack:</strong> AWS (Kinesis, Lambda, Comprehend), Python, PRAW API, PowerBI</p>
+            </div>
+            <a href="https://github.com/BhaktiAyarekar/Project_1_Reddit-Sentiment-Analysis" class="btn btn-warning mt-3 align-self-start">See Project</a>
+            </div>
         </div>
-      </div>
+        </div>
 
-      <div class="col-4 mb-5">
-        <div class="card" style="width: 22rem; height: 35rem;">
-          <img src="/images/pro2.jpg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-          <div class="card-body">
+        <!-- Project 2 -->
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <img src="/images/pro2.jpg" class="card-img-top img-fluid p-2" alt="Walmart Time Series Analysis" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
             <h5 class="card-title">Walmart Time Series Analysis (2023)</h5>
-            <p class="card-text"><b>Sales forecasting with 96.48% accuracy</b><br>
-              Comprehensive analysis using ARIMA, SARIMA, and Facebook Prophet models. Achieved exceptional accuracy rates enabling data-driven sales planning decisions.<br>
-              <b>Tech Stack: Python, Pandas, Matplotlib, ARIMA, SARIMA, FB-Prophet</b></p>
-            <a href="https://github.com/BhaktiAyarekar/Project_2_Walmart-Time-Series-Analysis" class="btn btn-warning">See Project</a>
-          </div>
+            <div class="card-text flex-grow-1">
+                <p><strong>Sales forecasting with 96.48% accuracy</strong></p>
+                <p>Comprehensive analysis using ARIMA, SARIMA, and Facebook Prophet models.</p>
+                <p><strong>Tech Stack:</strong> Python, Pandas, Matplotlib, ARIMA, SARIMA, FB-Prophet</p>
+            </div>
+            <a href="https://github.com/BhaktiAyarekar/Project_2_Walmart-Time-Series-Analysis" class="btn btn-warning mt-3 align-self-start">See Project</a>
+            </div>
         </div>
-      </div>
+        </div>
 
-      <div class="col-4 mb-5">
-        <div class="card" style="width: 22rem; height: 35rem;">
-          <img src="/images/pro3.jpg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-          <div class="card-body">
+        <!-- Project 3 -->
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <img src="/images/pro3.jpg" class="card-img-top img-fluid p-2" alt="Number Plate Recognition" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
             <h5 class="card-title">Automatic Number Plate Recognition System (2022)</h5>
-            <p class="card-text"><b>High-precision vehicle identification with 98% detection accuracy</b><br>
-              Intelligent ANPR system combining YOLOv8 and ResNet-50 with OCR integration. Features real-time processing and scalable backend deployment.<br>
-              <b>Tech Stack: YOLOv8, ResNet-50, EasyOCR, TesseractOCR, Node.js, SQL</b></p>
-            <a href="https://github.com/BhaktiAyarekar/Project_3_Automatic-Number-Plate-Recognition" class="btn btn-warning">See Project</a>
-          </div>
+            <div class="card-text flex-grow-1">
+                <p><strong>High-precision vehicle identification with 98% detection accuracy</strong></p>
+                <p>Intelligent ANPR system combining YOLOv8 and ResNet-50 with OCR integration.</p>
+                <p><strong>Tech Stack:</strong> YOLOv8, ResNet-50, EasyOCR, TesseractOCR, Node.js, SQL</p>
+            </div>
+            <a href="https://github.com/BhaktiAyarekar/Project_3_Automatic-Number-Plate-Recognition" class="btn btn-warning mt-3 align-self-start">See Project</a>
+            </div>
         </div>
-      </div>
-      </div>
+        </div>
+    </div>
     </div>
 
     <!-- Individual Projects Section -->
-     <div id="projects" class="container mt-3 pt-5">
-      <h1 class="text-warning mb-3 pb-2">My Projects (Individual Projects)</h1>
-      <div class="row">
-
-      <div class="col-4 mb-5">
-        <div class="card" style="width: 22rem; height: 37rem;">
-          <img src="/images/pro4.png" class="card-img-top p-2" alt="..." style="height: 13rem;">
-          <div class="card-body">
+    <div id="projects" class="container mt-3 pt-5">
+    <h1 class="text-warning mb-3 pb-2 text-center text-md-left">My Projects (Individual Projects)</h1>
+    <div class="row justify-content-center">
+        <!-- Project 1 -->
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <img src="/images/pro4.png" class="card-img-top img-fluid p-2" alt="Reddit Sentiment Analysis" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
             <h5 class="card-title">Snowflake Weather Data Pipeline (2024)</h5>
-            <p class="card-text"><b>Real-time data pipeline with automated ingestion</b><br>
+            <div class="card-text flex-grow-1">
+                <p><b>Real-time data pipeline with automated ingestion</b><br>
               Built an end-to-end serverless pipeline fetching weather data for 10 Indian cities, processing through DynamoDB streams, and auto-ingesting into Snowflake using Snowpipe for real-time analytics.<br>
               <b>Tech Stack: AWS Lambda, DynamoDB, S3, Snowflake, Snowpipe, EventBridge</b></p>
-            <a href="https://github.com/bhaktiayarekar22/Snowflake_Weather_Data_Pipeline_Project" class="btn btn-warning">See Project</a>
-          </div>
+            </div>
+            <a href="https://github.com/bhaktiayarekar22/Snowflake_Weather_Data_Pipeline_Project" class="btn btn-warning mt-3 align-self-start">See Project</a>
+            </div>
         </div>
-      </div>
-      
+        </div>
 
-    <div class="col-4 mb-5">
-      <div class="card" style="width: 22rem; height: 37rem;">
-        <img src="/images/pro5.jpg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-        <div class="card-body">
-          <h5 class="card-title">Analytics Vidhya Course Search Engine (2024)</h5>
-          <p class="card-text"><b>Semantic search engine with intelligent course recommendations</b><br>
+        <!-- Project 2 -->
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <img src="/images/pro5.jpg" class="card-img-top img-fluid p-2" alt="Walmart Time Series Analysis" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Analytics Vidhya Course Search Engine (2024)</h5>
+            <div class="card-text flex-grow-1">
+                <p><b>Semantic search engine with intelligent course recommendations</b><br>
             Built an AI-powered search system using Sentence Transformers for semantic similarity matching. Features interactive Streamlit interface with similarity scoring and customizable results display.<br>
             <b>Tech Stack: Python, Streamlit, Sentence Transformers, Pandas, NumPy</b></p>
-          <a href="https://github.com/bhaktiayarekar22/Smart-Search" class="btn btn-warning">See Project</a>
+            </div>
+            <a href="https://github.com/bhaktiayarekar22/Smart-Search" class="btn btn-warning mt-3 align-self-start">See Project</a>
+            </div>
         </div>
-      </div>
-    </div>
+        </div>
 
-      <div class="col-4 mb-5">
-        <div class="card" style="width: 22rem; height: 37rem;">
-          <img src="/images/pro3.jpg" class="card-img-top p-2" alt="..." style="height: 13rem;">
-          <div class="card-body">
+        <!-- Project 3 -->
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100">
+            <img src="/images/pro3.jpg" class="card-img-top img-fluid p-2" alt="Number Plate Recognition" style="height: 200px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
             <h5 class="card-title">Automatic Number Plate Recognition System (2022)</h5>
-            <p class="card-text"><b>High-precision vehicle identification with 98% detection accuracy</b><br>
-              Intelligent ANPR system combining YOLOv8 and ResNet-50 with OCR integration. Features real-time processing and scalable backend deployment.<br>
-              <b>Tech Stack: YOLOv8, ResNet-50, EasyOCR, TesseractOCR, Node.js, SQL</b></p>
-            <a href="https://github.com/BhaktiAyarekar/Project_3_Automatic-Number-Plate-Recognition" class="btn btn-warning">See Project</a>
-          </div>
+            <div class="card-text flex-grow-1">
+                <p><strong>High-precision vehicle identification with 98% detection accuracy</strong></p>
+                <p>Intelligent ANPR system combining YOLOv8 and ResNet-50 with OCR integration.</p>
+                <p><strong>Tech Stack:</strong> YOLOv8, ResNet-50, EasyOCR, TesseractOCR, Node.js, SQL</p>
+            </div>
+            <a href="https://github.com/BhaktiAyarekar/Project_3_Automatic-Number-Plate-Recognition" class="btn btn-warning mt-3 align-self-start">See Project</a>
+            </div>
         </div>
-      </div>
-
-      </div>
+        </div>
     </div>
+    </div>
+        
 
     <!-- Social Media Section -->
-    <div id="social-media" class="container p-4 mt-5 pt-5 pb-5">
-      <div class="container text-white">
-        <h2 class="text-warning"><b>Social Media</b></h2>
-        <h1 class="m-heading">Let's connect</h1>
-        <div class="row pt-5">
-          
-          <div class="col-4 mb-3">
-            <a href="https://www.linkedin.com/in/bhakti-ayarekar-475936249/" target="_blank" class="media-link btn text-decoration-none w-100 p-3">
-              <div class="row">
-                <div class="col-6 d-flex justify-content-start">
-                  <h3 class="pt-2 m-0 text-white">LinkedIn</h3>
+ <div id="social-media" class="container p-4 mt-5 pt-5 pb-5">
+        <div class="container text-white">
+            <h2 class="text-warning"><b>Social Media</b></h2>
+            <h1 class="m-heading">Let's connect</h1>
+            <div class="row pt-5 g-3">
+                
+                <!-- LinkedIn -->
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <a href="https://www.linkedin.com/in/bhakti-ayarekar-475936249/" target="_blank" class="media-link btn text-decoration-none w-100 p-3">
+                        <div class="row align-items-center">
+                            <div class="col-6 d-flex justify-content-start">
+                                <h3 class="pt-2 m-0 text-white">LinkedIn</h3>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end align-items-center">
+                                <i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-6 d-flex justify-content-end align-items-center">
-                  <i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i>
-                </div>
-              </div>
-            </a>
-          </div>
 
-          <div class="col-4 mb-3">
-            <a href="https://github.com/bhaktiayarekar22/" target="_blank" class="media-link btn text-decoration-none w-100 p-3">
-              <div class="row">
-                <div class="col-6 d-flex justify-content-start">
-                  <h3 class="pt-2 m-0 text-white">Github</h3>
+                <!-- GitHub -->
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <a href="https://github.com/bhaktiayarekar22/" target="_blank" class="media-link btn text-decoration-none w-100 p-3">
+                        <div class="row align-items-center">
+                            <div class="col-6 d-flex justify-content-start">
+                                <h3 class="pt-2 m-0 text-white">Github</h3>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end align-items-center">
+                                <i class="fab fa-github fa-2x" style="color: #ada5a5;"></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-6 d-flex justify-content-end align-items-center">
-                  <i class="fab fa-github fa-2x" style="color: #ada5a5;"></i>
-                </div>
-              </div>
-            </a>
-          </div>
 
-          <div class="col-4 mb-3">
-            <a href="mailto:bhaktiayarekar@gmail.com" class="media-link btn text-decoration-none w-100 p-3">
-              <div class="row">
-                <div class="col-6 d-flex justify-content-start">
-                  <h3 class="pt-2 m-0 text-white">Email</h3>
+                <!-- Email -->
+                <div class="col-lg-4 col-md-12 col-12 mb-3">
+                    <a href="mailto:bhaktiayarekar@gmail.com" class="media-link btn text-decoration-none w-100 p-3">
+                        <div class="row align-items-center">
+                            <div class="col-6 d-flex justify-content-start">
+                                <h3 class="pt-2 m-0 text-white">Email</h3>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end align-items-center">
+                                <i class="fas fa-envelope fa-2x" style="color: #d44638;"></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-6 d-flex justify-content-end align-items-center">
-                  <i class="fas fa-envelope fa-2x" style="color: #d44638;"></i>
-                </div>
-              </div>
-            </a>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-    <!-- Resume Section -->
-    <div id="resume" class="container mt-5 pt-5 pb-5">
-        <div class="row">
-          <div class="col-2">
-            <div class="text-center">
-              <i class="fas fa-file-pdf fa-10x text-warning"></i>
+                
             </div>
-          </div>
-          <div class="col-10 pl-5 pt-5 pb-5 text-white">
-            <h1 class="text-warning pb-4"><b>My Resume</b></h1>
-            <h2 class="m-heading">Download my latest resume</h2>
-            <p>Get to know more about my professional journey, skills, and experience. My resume contains detailed information about:</p>
-            <ul class="text-white">
-              <li>Educational Background</li>
-              <li>Technical Skills & Expertise</li>
-              <li>Work Experience & Internships</li>
-              <li>Projects & Achievements</li>
-              <li>Leadership Experience</li>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    
+        <!-- Resume Section -->
+        <div id="resume" class="container py-5 my-md-5">
+        <div class="row align-items-center">
+            <!-- PDF Icon Column -->
+            <div class="col-12 col-md-3 col-lg-2 text-center mb-4 mb-md-0">
+            <i class="fas fa-file-pdf fa-7x text-warning resume-icon"></i>
+            </div>
+            
+            <!-- Content Column -->
+            <div class="col-12 col-md-9 col-lg-10 text-white pl-md-4">
+            <h1 class="text-warning pb-2"><b>My Resume</b></h1>
+            <h2 class="m-heading pb-3">Download my latest resume</h2>
+            <p class="resume-description">Get to know more about my professional journey, skills, and experience. My resume contains detailed information about:</p>
+            <ul class="resume-list">
+                <li>Educational Background</li>
+                <li>Technical Skills & Expertise</li>
+                <li>Work Experience & Internships</li>
+                <li>Projects & Achievements</li>
+                <li>Leadership Experience</li>
             </ul>
-            <div class="mt-4">
-              <a href="/files/Bhakti_Prakash_Ayarekar.pdf" download="Bhakti_Ayarekar_Resume.pdf" class="btn btn-warning btn-lg mr-3">
-                <i class="fas fa-download mr-2"></i>Download Resume
-              </a>
-              <a href="/files/Bhakti_Prakash_Ayarekar.pdf" target="_blank" class="btn btn-outline-warning btn-lg">
+            
+            <!-- Two Tabs in One Line -->
+            <div class="resume-tabs d-flex flex-column flex-md-row mt-4">
+                <a href="/files/Bhakti_Prakash_Ayarekar.pdf" download="Bhakti_Ayarekar_Resume.pdf" 
+                class="btn btn-warning btn-lg mr-md-3 mb-3 mb-md-0 flex-grow-1 text-center">
+                <i class="fas fa-download mr-2"></i>Download PDF
+                </a>
+                <a href="/files/Bhakti_Prakash_Ayarekar.pdf" target="_blank" 
+                class="btn btn-outline-warning btn-lg flex-grow-1 text-center">
                 <i class="fas fa-eye mr-2"></i>View Online
-              </a>
+                </a>
             </div>
-          </div>
+            </div>
         </div>
-    </div>
+        </div>
 
 
      <div id="contact" class="container mt-5 pt-5 pb-5">
